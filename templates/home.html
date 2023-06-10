@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    body{
+        height: 100vh;
+        background-color: black;
+    }
+    .nav-item a{
+        color: black;
+        font-size: 1.2rem;
+    }
+    .nav-item a:hover{
+        color: orange;
+    }
+    .text-overlay {
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  color: rgb(19, 18, 18);
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 2px 2px 4px #161616;}
+@media(max-width:767px) {  /* Adjust the max-width as per your requirements */
+  .text-overlay{
+    font-size:25px !important;
+    top: 30%; /* Change the font size to your desired value */
+  }
+}
+</style>
+<body>
+    <div>
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+          <div>
+            <img class="img-fluid" src="https://cdn3.iconfinder.com/data/icons/trading-1/1000/icon_trading-18-512.png" style="width: 40px; height: 40px; border-radius: 50%;" class="rounded"><b style="font-size: 30px;"> MyTradings</b>
+        </div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav  ml-auto">
+              <li class="nav-item">
+                <b><a class="nav-link" href="{% url 'homes' %}"style="margin-right: 50px;">
+                  Home
+                 </b></a>            </li>
+              <li class="nav-item">
+                <b><a class="nav-link" href="" style="margin-right: 50px;">
+                  About
+                </b></a>            </li>
+              <li class="nav-item">
+                <b><a class="nav-link" href="" style="margin-right: 50px;">
+                  Services
+                </b></a>            </li> 
+                <li class="nav-item">
+                  <b><a class="nav-link" href="" style="margin-right: 50px;">
+                   Contact
+                  </b></a>         </li>  
+                  
+                    </div>   
+            </ul>
+          </div>  
+        </nav>
+        <div id="home">
+            <img src="https://t3.ftcdn.net/jpg/02/66/08/24/360_F_266082477_JRmLYXEFZh4YIlWTTMQMEUU5zyvj2UKB.jpg" width="100%">
+            <div>
+                <span class="text-overlay" style="font-size:x-larger;">Making Your Worldwide Trading Easy</span><br>
+            </div>
+            <div class="row" style="margin-top: 2%;">
+                <div class="col-sm-8" style="margin: 0 auto;">
+                  <div class="row">
+              
+                <div class="col-sm-4 pl-4" >
+                  <div class="card" style="width: 18rem;border-radius: 12px; border: 3px solid;">
+                    <img class="card-img-top" src="https://www.thespruce.com/thmb/9aNrfFW2owg0-Hkpys9uG4fjCrU=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/patterned-carpet-in-decorative-living-room-interior-with-painting-above-couch--real-photo-996692496-dec2473f5d434d2c8eb50a7cd18b3758.jpg" alt="Card image cap" >
+                    <div class="card-body">
+                      <h3>Interior</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 pl-6">
+                  <div class="card" style="width: 18rem;border-radius: 12px; border: 3px solid;">
+                    <img class="card-img-top" src="https://www.thespruce.com/thmb/P4hBQtEPZVrrWPdbtXy7-wv9fiE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1161177015-f1de4ba58a6c4f50969d9119d80405a6.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h3>Interior</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                </div><div class="col-sm-4 pl-6">
+                  <div class="card" style="width: 18rem;border-radius: 12px; border: 3px solid;">
+                    <img class="card-img-top" src="https://www.thespruce.com/thmb/8TkJ0FvOuLAoyzpUcWgb4-CWmB0=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Basic-Interior-Design-Principles-1-a2141ef720f344b39e82f79b3c9c46ba.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h3>Architecture</h3>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                  </div>
+                     </div>
+               
+                </div>
+                
+              </div>
+              
+
+        </div>
+    </div>
+</body>
+</html>
